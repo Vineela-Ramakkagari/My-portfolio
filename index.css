@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    background-color: rgb(16, 59, 16);
+}
+
+#container {
+    display: flex;
+}
+
+.leftbox {
+    width: 50%;
+    text-align: center;
+    margin: 15rem auto;
+}
+h1 {
+    margin-bottom: 1rem;
+}
+
+.leftbox >p {
+    max-width: 45%;
+    margin: auto;
+}
+
+.rightbox {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    margin: 3rem;
+}
+
+#box {
+    margin: 3px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-position: bottom;
+}
+
+#box:hover {
+    background-position: top;
+    cursor: pointer;
+}
+
+.one {
+    grid-row: span 2;
+}
+
+.two {
+    grid-column: span 2;
+}
+
+.four {
+    grid-row: span 2;
+}
+.five {
+    grid-column: span 2;
+}
+
+.seven {
+    grid-column: span 2;
+}
